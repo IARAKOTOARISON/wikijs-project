@@ -1389,3 +1389,247 @@ body {
         font-size: 22px;
     }
 }
+
+
+/* ------------------ */
+
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* BODY */
+
+body{
+
+    font-family:Arial, sans-serif;
+
+    background:#ffffff;
+
+    color:#111111;
+
+    line-height:1.6;
+}
+
+/* CONTAINER */
+
+.container{
+
+    width:92%;
+
+    max-width:1300px;
+
+    margin:auto;
+
+    padding:40px 20px 80px;
+}
+
+/* HERO */
+
+.hero{
+
+    text-align:center;
+
+    padding:70px 20px;
+
+    margin-bottom:60px;
+
+    border-bottom:2px solid #dbe7ff;
+}
+
+.hero h1{
+
+    color:#1d4ed8;
+
+    font-size:44px;
+
+    margin-bottom:15px;
+}
+
+.subtitle{
+
+    color:#555555;
+
+    font-size:18px;
+}
+
+/* GROUP */
+
+.group-section{
+
+    margin-bottom:90px;
+}
+
+.group-section h2{
+
+    color:#1d4ed8;
+
+    font-size:30px;
+
+    margin-bottom:35px;
+
+    position:relative;
+}
+
+.group-section h2::after{
+
+    content:"";
+
+    display:block;
+
+    width:90px;
+
+    height:4px;
+
+    background:#1d4ed8;
+
+    margin-top:10px;
+
+    border-radius:10px;
+}
+
+/* CARDS */
+
+.cards{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:25px;
+}
+
+/* MEMBER CARD */
+
+.member-card{
+
+    width:260px;
+
+    background:#ffffff;
+
+    border:1px solid #dbe7ff;
+
+    border-radius:18px;
+
+    padding:20px;
+
+    transition:0.3s;
+
+    position:relative;
+}
+
+.member-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 12px 30px rgba(0,0,0,0.08);
+}
+
+/* CHEF CARD */
+
+.chef{
+
+    border:2px solid #1d4ed8;
+}
+
+/* IMAGE PLACEHOLDER */
+
+.image-placeholder{
+
+    width:100%;
+
+    height:220px;
+
+    background:#edf3ff;
+
+    border-radius:14px;
+
+    margin-bottom:20px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:#1d4ed8;
+
+    font-size:14px;
+
+    font-weight:bold;
+}
+
+.image-placeholder::before{
+
+    content:"PHOTO";
+}
+
+/* TEXT */
+
+.member-card h3{
+
+    color:#111111;
+
+    font-size:18px;
+
+    margin-bottom:10px;
+}
+
+.matricule{
+
+    color:#666666;
+
+    font-size:15px;
+}
+
+/* ROLE */
+
+.role{
+
+    position:absolute;
+
+    top:15px;
+
+    right:15px;
+
+    background:#1d4ed8;
+
+    color:white;
+
+    padding:6px 12px;
+
+    border-radius:30px;
+
+    font-size:12px;
+
+    font-weight:bold;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .hero h1{
+
+        font-size:34px;
+    }
+
+    .group-section h2{
+
+        font-size:24px;
+    }
+
+    .cards{
+
+        justify-content:center;
+    }
+
+    .member-card{
+
+        width:100%;
+    }
+
+}
