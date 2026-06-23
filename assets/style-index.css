@@ -849,7 +849,8 @@ body {
 /* CONTAINER */
 .container {
     width: 92%;
-    max-width: 1300px;
+    /* ito eh */
+    max-width: 1440px;
     margin: auto;
     padding: 40px 20px 80px;
 }
@@ -983,5 +984,412 @@ body {
 
     .member-card {
         width: 100%;
+    }
+}
+
+/* ------------------------------ */
+
+/* ===== POURQUOI-ARIELATRA.CSS ===== */
+
+/* ----- RESET ----- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ----- BODY ----- */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f8fbff;
+    color: #111111;
+    line-height: 1.7;
+    padding: 40px 0;
+}
+
+/* ----- CONTAINER ----- */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    background: #ffffff;
+    padding: 50px 60px;
+    border-radius: 24px;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.05);
+    border: 1px solid #dbe7ff;
+}
+
+/* ===== HERO ===== */
+.hero {
+    text-align: center;
+    padding: 20px 0 30px;
+    border-bottom: 2px solid #dbe7ff;
+    margin-bottom: 40px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    color: #1d4ed8;
+    margin-bottom: 10px;
+    letter-spacing: -0.5px;
+}
+
+.hero .subtitle {
+    font-size: 18px;
+    color: #555555;
+    font-weight: 400;
+}
+
+/* ===== INTRO ===== */
+.section {
+    margin-bottom: 30px;
+}
+
+.intro-box {
+    background: #f0f6ff;
+    border-radius: 14px;
+    padding: 25px 30px;
+    border-left: 4px solid #1d4ed8;
+}
+
+.intro-box p {
+    font-size: 18px;
+    color: #222222;
+}
+
+.intro-box strong {
+    color: #1d4ed8;
+}
+
+/* ===== CARDS ===== */
+.cards {
+    display: flex;
+    gap: 30px;
+    margin: 35px 0 45px;
+}
+
+.card {
+    flex: 1;
+    background: #ffffff;
+    border: 1px solid #dbe7ff;
+    border-radius: 16px;
+    padding: 30px 28px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(29, 78, 216, 0.08);
+    border-color: #1d4ed8;
+}
+
+.card h2 {
+    color: #1d4ed8;
+    font-size: 32px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.card p {
+    color: #333333;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.card p:last-child {
+    margin-bottom: 0;
+}
+
+.card-highlight {
+    margin-top: 18px;
+    padding: 12px 16px;
+    background: #f0f6ff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-style: italic;
+    color: #1d4ed8;
+    font-weight: 500;
+    border: 1px dashed #dbe7ff;
+}
+
+.card-highlight i {
+    font-size: 18px;
+}
+
+/* ===== MEANING ===== */
+.meaning {
+    margin: 45px 0;
+}
+
+.meaning h2 {
+    color: #1d4ed8;
+    font-size: 28px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.meaning h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #1d4ed8;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.meaning h2 .highlight {
+    color: #1d4ed8;
+}
+
+/* Fusion box */
+.fusion-box {
+    background: linear-gradient(135deg, #f0f6ff, #ffffff);
+    border: 2px solid #1d4ed8;
+    border-radius: 16px;
+    padding: 30px 35px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.fusion-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.fusion-word {
+    color: #1d4ed8;
+    font-size: 32px;
+}
+
+.fusion-plus {
+    color: #888;
+    font-size: 24px;
+}
+
+.fusion-equals {
+    color: #888;
+    font-size: 24px;
+}
+
+.fusion-result {
+    color: #1d4ed8;
+    font-size: 36px;
+    background: #ffffff;
+    padding: 0 15px;
+    border-radius: 10px;
+    border: 2px solid #1d4ed8;
+    line-height: 1.4;
+}
+
+.fusion-description {
+    font-size: 17px;
+    color: #333;
+    margin-top: 5px;
+}
+
+.fusion-description strong {
+    color: #1d4ed8;
+}
+
+/* Meaning grid */
+.meaning-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.meaning-item {
+    background: #f8fbff;
+    padding: 25px;
+    border-radius: 14px;
+    border: 1px solid #dbe7ff;
+}
+
+.meaning-item h3 {
+    color: #1d4ed8;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.meaning-item p {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.meaning-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.meaning-item ul li {
+    padding: 6px 0 6px 28px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="%231d4ed8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>') left center no-repeat;
+    background-size: 16px;
+    color: #333;
+}
+
+.meaning-item .highlight {
+    color: #1d4ed8;
+    font-weight: 600;
+}
+
+/* ===== VISION ===== */
+.vision {
+    margin-top: 40px;
+    padding-top: 35px;
+    border-top: 2px solid #dbe7ff;
+    text-align: center;
+}
+
+.vision h2 {
+    color: #1d4ed8;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.vision h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #1d4ed8;
+    margin: 10px auto 0;
+    border-radius: 10px;
+}
+
+.vision p {
+    font-size: 18px;
+    color: #333333;
+    max-width: 750px;
+    margin: 0 auto 25px;
+}
+
+.vision-tags {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background: #f0f6ff;
+    border: 1px solid #dbe7ff;
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1d4ed8;
+    transition: all 0.3s ease;
+}
+
+.tag:hover {
+    background: #1d4ed8;
+    color: #ffffff;
+    border-color: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .container {
+        padding: 30px 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .meaning-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .fusion-item {
+        font-size: 20px;
+    }
+
+    .fusion-word {
+        font-size: 24px;
+    }
+
+    .fusion-result {
+        font-size: 28px;
+    }
+
+    .card h2 {
+        font-size: 26px;
+    }
+
+    .vision-tags {
+        gap: 8px;
+    }
+
+    .tag {
+        font-size: 12px;
+        padding: 6px 14px;
+    }
+
+    .intro-box {
+        padding: 18px 20px;
+    }
+
+    .intro-box p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px 15px;
+        width: 95%;
+    }
+
+    .hero h1 {
+        font-size: 26px;
+    }
+
+    .hero .subtitle {
+        font-size: 15px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .fusion-item {
+        font-size: 16px;
+        gap: 6px;
+    }
+
+    .fusion-word {
+        font-size: 20px;
+    }
+
+    .fusion-result {
+        font-size: 22px;
+        padding: 0 10px;
+    }
+
+    .meaning h2 {
+        font-size: 22px;
+    }
+
+    .vision h2 {
+        font-size: 22px;
     }
 }
