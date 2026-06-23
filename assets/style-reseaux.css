@@ -171,3 +171,29 @@ body {
         text-align: center;
     }
 }
+
+/* --- Correction pour supprimer les points --- */
+.social-links { 
+    list-style: none; /* C'est cette ligne qui supprime les points */
+    padding: 0; 
+    margin-bottom: 30px; 
+}
+
+.social-links li {
+    margin-bottom: 15px;
+}
+
+.social-links li a { 
+    display: block; 
+    padding: 15px; 
+    background: #f8fbff; 
+    border-radius: 8px; 
+    font-weight: bold;
+    border-left: 4px solid #0056b3;
+    transition: 0.3s;
+}
+
+.social-links li a:hover {
+    background: #eef5ff;
+    padding-left: 25px;
+}
