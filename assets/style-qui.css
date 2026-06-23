@@ -1,0 +1,94 @@
+/* --- Global --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* --- Header & Nav --- */
+.header {
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+    background: white;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-cta {
+    background: #0056b3;
+    color: white !important;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+/* --- Cartes Membres --- */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.member-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #eee;
+    text-align: center;
+}
+
+/* La correction pour que les images entrent dans les rectangles */
+.image-placeholder {
+    width: 100%;
+    height: 200px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    /* Empêche l'image de déborder */
+}
+
+.image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* L'image remplit tout l'espace sans se déformer */
+    display: block;
+}
+
+/* --- Footer --- */
+.footer {
+    background: #f4f7f9;
+    padding: 50px 0;
+    margin-top: 50px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
