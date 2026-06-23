@@ -42,9 +42,9 @@
     </header>
 
     <!-- ===== HERO SECTION ===== -->
-    <section class="hero">
+    <!-- <section class="hero">
         <div class="container hero-container">
-            <span class="hero-badge">🇲🇬 Refondation éducative</span>
+            <span class="hero-badge">Refondation éducative</span>
             <h1 class="hero-title">Construisons ensemble l'<span class="highlight">éducation</span> de demain</h1>
             <p class="hero-subtitle">
                 Arielatra est un mouvement citoyen pour une éducation inclusive, innovante et accessible à tous les enfants de Madagascar.
@@ -68,7 +68,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
+
+    
 
     <!-- ===== CONTENU PRINCIPAL ===== -->
     <main>
