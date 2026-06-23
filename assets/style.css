@@ -1,0 +1,166 @@
+/* --- Réinitialisation et base --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Le conteneur s'adapte à toute la largeur avec 20px de marge */
+.container {
+    width: calc(100% - 40px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* --- HEADER --- */
+.header {
+    background: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon {
+    margin-right: 8px;
+    color: #0056b3;
+}
+
+.nav-list {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-cta {
+    background: #0056b3;
+    color: white !important;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+/* --- HERO SECTION --- */
+.hero {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #f8fbff;
+}
+
+.hero-badge {
+    background: #e0eaff;
+    color: #0056b3;
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    margin: 20px 0;
+}
+
+.highlight {
+    color: #0056b3;
+}
+
+.hero-subtitle {
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.btn {
+    padding: 12px 25px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: #0056b3;
+    color: white;
+}
+
+.btn-outline {
+    border: 1px solid #0056b3;
+    color: #0056b3;
+}
+
+/* --- FOOTER --- */
+.footer {
+    background: #f4f7f9;
+    padding: 50px 0 20px;
+    margin-top: 50px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-col h4 {
+    margin-bottom: 15px;
+    color: #0056b3;
+}
+
+.footer-links li,
+.footer-contact li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+
+    /* Logique simple de menu mobile */
+    .menu-toggle {
+        display: block;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}
