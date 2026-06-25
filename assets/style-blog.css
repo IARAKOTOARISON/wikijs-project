@@ -180,3 +180,33 @@ a {
     font-style: italic;
     color: #666;
 }
+
+.blog-container { padding: 40px 0; }
+
+.blog-full-card {
+    background: #ffffff;
+    border: 2px solid #0056b3; /* Contour bleu signature */
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.blog-date { color: #0056b3; font-weight: bold; font-size: 0.9rem; }
+.blog-full-card h1 { color: #333; margin: 15px 0 30px 0; }
+.blog-full-card p { margin-bottom: 20px; text-align: justify; line-height: 1.8; color: #444; }
+
+/* Image au-dessus de l'article */
+.blog-full-card .image-placeholder {
+    height: 300px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.blog-full-card .image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
